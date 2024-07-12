@@ -23,7 +23,7 @@ Run the script and follow the on-screen prompts. The following commands are avai
 - `History`: Display the current browsing history
 - `Exit`: Quit the program
 
-- ## Implementation Details
+## Implementation Details
 
 - The home page is set to "www.w3.org" and cannot be deleted
 - The history is implemented using a Python dictionary
