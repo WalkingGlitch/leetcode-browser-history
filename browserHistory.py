@@ -13,7 +13,6 @@ This is licensed in the public domain. Feel free to use it for any purpose.
 '''
 
 
-
 current_page_num = 0
 requested_page_num = 0
 history = {
@@ -51,7 +50,7 @@ def back_page(pages_back):  # This implements the back functionality.
     global current_page_num
     counter = current_page_num - pages_back
     if counter < 0:
-        print("You're trying to go back to before the Epoch silly. Try a smaller number of steps.")
+        print("You're trying to go back to before the Epoch, silly. Try a smaller number of steps.")
     else:
         current_page_num = counter
 
@@ -77,11 +76,11 @@ def page_navigator():  # Main program loop that implements the user interface.
     try:
         if goto[0] == "b":
             goto = goto.split(maxsplit=1)[-1]  # This parses the string into arguments for the relevant functions.
-            back_page(int(goto).__abs__())
+            back_page(round(abs(float(goto))))
 
         elif goto[0] == "f":
             goto = goto.split(maxsplit=1)[-1]  # This parses the string into arguments for the relevant functions.
-            forward_page(int(goto).__abs__())
+            forward_page(round(abs(float(goto))))
 
         elif goto[0] == "n":
             goto = goto.split(maxsplit=1)[-1]  # This parses the string into arguments for the relevant functions.
