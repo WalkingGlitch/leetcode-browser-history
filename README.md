@@ -10,4 +10,4 @@ One of the goals was to accomplish this without importing any libraries or funct
 
 This is made for Python 3.11. YMMV.
 
-This is licensed in the public domain. Feel free top use it for any purpose.
+This is licensed in the public domain. Feel free to use it for any purpose.
